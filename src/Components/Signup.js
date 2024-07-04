@@ -12,13 +12,16 @@ const Signup = (props) => {
     e.preventDefault();
     const { name, email, password, cpassword } = cred;
     if (password === cpassword && password !== "") {
-      const response = await fetch(`http://localhost:5000/auth/createuser`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, password }),
-      });
+      const response = await fetch(
+        `https://inotebook-s6yj.onrender.com/auth/createuser`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, password }),
+        }
+      );
       const json = await response.json();
       console.log(json);
 
