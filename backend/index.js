@@ -12,7 +12,7 @@ app.use("/auth", require("./routes/auth"));
 app.use("/notes", require("./routes/notes"));
 
 app.get("/", (req, res) => {
-  res.send("Hello Atin!");
+  res.send("Server is live");
 });
 
 app.listen(port, () => {
