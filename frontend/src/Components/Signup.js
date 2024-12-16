@@ -13,7 +13,7 @@ const Signup = (props) => {
     const { name, email, password, cpassword } = cred;
     if (password === cpassword && password !== "") {
       const response = await fetch(
-        `https://inotebook-s6yj.onrender.com/auth/createuser`,
+        `https://inotebook-pro.onrender.com/auth/createuser`,
         {
           method: "POST",
           headers: {

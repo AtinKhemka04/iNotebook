@@ -6,7 +6,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      `https://inotebook-s6yj.onrender.com/auth/login`,
+      `https://inotebook-pro.onrender.com/auth/login`,
       {
         method: "POST",
         headers: {
